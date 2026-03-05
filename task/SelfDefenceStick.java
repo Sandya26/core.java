@@ -1,0 +1,75 @@
+class SelfDefenceStick
+{
+	static String prize="700";
+	static String brand="Generic";
+	static String material="Stainless Steel";
+	static String colour="Black";
+	static String shaftMaterial="Stainless Steel";
+	static String extendedLength="30 Centimetres";
+	static String handleMaterial="Stainless Steel";
+	static String itemWeight="230 Grams";
+	static String maximumHeightRecommendation="30 Centimetres";
+	static String productDimensions="5W x 15H Centimeters";
+	static String baseMaterial="Stainless Steel";
+	static String numberOfItems="2";
+	static String netQuantity="1 Count";
+	static String manufacturer="Shivant Velly";
+	static String department="Unisex-Adult";
+	static String countryOfOrigin="China";
+	static String asin="B0GHDX2RF2";
+	public static void main(String args[])
+	{
+		String prize="500";
+		String brand="Generic";
+		String material="Stainless Steel";
+		String colour="Black";
+		String shaftMaterial="Stainless Steel";
+		String extendedLength="30 Centimetres";
+		String handleMaterial="Stainless Steel";
+		String itemWeight="230 Grams";
+		String maximumHeightRecommendation="30 Centimetres";
+		String productDimensions="5W x 15H Centimeters";
+		String baseMaterial="Stainless Steel";
+		String numberOfItems="1";
+		String netQuantity="1 Count";
+		String manufacturer="Shivant Velly";
+		String department="Unisex-Adult";
+		String countryOfOrigin="China";
+		String asin="B0GHDX2RF2";
+		System.out.println("Self Defence Stick Prize is: "+prize);
+		System.out.println("Self Defence Stick brand is: "+brand);
+		System.out.println("Self Defence Stick material is: "+material);
+		System.out.println("Self Defence Stick colour is: "+colour);
+		System.out.println("Self Defence Stick shaftMaterial is: "+shaftMaterial);
+		System.out.println("Self Defence Stick extendedLength is: "+extendedLength);
+		System.out.println("Self Defence Stick handleMaterial is: "+handleMaterial);
+		System.out.println("Self Defence Stick itemWeight is: "+itemWeight);
+		System.out.println("Self Defence Stick maximumHeightRecommendation is: "+maximumHeightRecommendation);
+		System.out.println("Self Defence Stick Product Dimensions is: "+productDimensions);
+		System.out.println("Self Defence Stick Base Material is: "+baseMaterial);
+		System.out.println("Self Defence Stick Number Of Items is: "+numberOfItems);
+		System.out.println("Self Defence Stick Net Quantity is: "+netQuantity);
+		System.out.println("Self Defence Stick Manufacturer is: "+manufacturer);
+		System.out.println("Self Defence Stick Department is: "+department);
+		System.out.println("Self Defence Stick Country Of Origin is: "+countryOfOrigin);
+		System.out.println("Self Defence Stick ASIN is: "+asin);
+		System.out.println("-------------------------------------");
+		System.out.println("Self Defence Stick Prize is: "+SelfDefenceStick.prize);
+		System.out.println("Self Defence Stick brand is: "+SelfDefenceStick.brand);
+		System.out.println("Self Defence Stick material is: "+SelfDefenceStick.material);
+		System.out.println("Self Defence Stick colour is: "+SelfDefenceStick.colour);
+		System.out.println("Self Defence Stick shaftMaterial is: "+SelfDefenceStick.shaftMaterial);
+		System.out.println("Self Defence Stick extendedLength is: "+SelfDefenceStick.extendedLength);
+		System.out.println("Self Defence Stick handleMaterial is: "+SelfDefenceStick.handleMaterial);
+		System.out.println("Self Defence Stick itemWeight is: "+SelfDefenceStick.itemWeight);
+		System.out.println("Self Defence Stick maximumHeightRecommendation is: "+SelfDefenceStick.maximumHeightRecommendation);
+		System.out.println("Self Defence Stick Product Dimensions is: "+SelfDefenceStick.productDimensions);
+		System.out.println("Self Defence Stick Base Material is: "+SelfDefenceStick.baseMaterial);
+		System.out.println("Self Defence Stick Number Of Items is: "+SelfDefenceStick.numberOfItems);
+		System.out.println("Self Defence Stick Net Quantity is: "+SelfDefenceStick.netQuantity);
+		System.out.println("Self Defence Stick Manufacturer is: "+SelfDefenceStick.manufacturer);
+		System.out.println("Self Defence Stick Department is: "+SelfDefenceStick.department);
+		System.out.println("Self Defence Stick Country Of Origin is: "+SelfDefenceStick.countryOfOrigin);
+		System.out.println("Self Defence Stick ASIN is: "+SelfDefenceStick.asin);
+	}
+}
