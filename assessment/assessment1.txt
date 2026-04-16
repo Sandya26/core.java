@@ -1,0 +1,195 @@
+1} Explain Constructor Chaining using this() with example.
+Constructor Chaining is a special type of  constructor which have a method name as class name.
+this  keyword is used to specify the particular method.
+
+class Amazon{
+int productId;
+String productName;
+String brand;
+public void adddetails()
+{
+this.productId=productid;
+this.productName=productName;
+this.brand=brand;
+}
+}
+
+2} Explain default  values assigned to instance variables in Java with example.
+
+class Flipkart
+{
+    String products[] = new String[21];
+    int index;
+
+    public boolean addFlipkart(String product)
+    {
+        boolean isFlipkartAdded = false;
+
+        if(product != null && !product.isEmpty())
+        {
+            products[index++] = product;
+            isFlipkartAdded = true;
+        }
+        else
+        {
+            System.out.println(product + " is invalid");
+        }
+
+        return isFlipkartAdded;
+    }
+
+    public void getFlipkart()
+    {
+        System.out.println("Get Method is Added");
+
+        for(String product : products)
+        {
+            System.out.println(product);
+        }
+    }
+	public boolean updateFlipkart(String existingFlipkartName,String updateFlipkartName)
+	{
+		boolean isFlipkartUpdated=false;
+		for(int index=0;index<products.length;index++)
+		{
+			if(products[index] == existingFlipkartName)
+			{
+				products[index]=updateFlipkartName;
+				isFlipkartUpdated=true;
+			}
+			if(isFlipkartUpdated==false)
+			{
+				System.out.println(existingFlipkartName + "is not found");
+			}
+		}
+		return isFlipkartUpdated;
+	}
+	public boolean deleteFlipkart(String value)
+	{
+		boolean isFlipkartDeleted=false;
+		for(int index=0; index<products.length;index++)
+		{
+			if(products[index]!=null && products[index].equals(value))
+			{
+				for(int j=index;j<products.length-1;j++)
+					products[j]=products[j+1];
+					products[products.length-1]=null;
+			}
+		}
+		return isFlipkartDeleted;
+	}
+}
+
+3} Write a Java Program to perform CRUD Operations on an array:
+	Create an array
+	Read/display elements
+	Update an element
+	Delete an element
+	
+class Meesho
+{
+String productNames[]=new String[3];
+int index;
+public boolean addProduct(String pr)
+{
+if(pr!=null && !pr.isEmpty())
+{
+	if(index<productNames.length)
+	{
+	productNames[index++]=pr;
+	return true;
+	}
+	else
+	System.out.println("Invalid");
+}
+else
+System.out.println(pr + "Product is not found");
+return false;
+}
+}
+public void getProduct()
+{
+System.out.println("Product Available in Meesho");
+for(String p:productNames)
+{
+	if(p!=null)
+	{
+	System.out.println(p)
+	}
+}
+}
+public void updateProduct(String excitedName,String newName)
+{
+for (int i = 0; i < productNames.length; i++) {
+            if (productNames[i] != null && productNames[i].equals(excitedName)) {
+                productNames[i] = newName;
+                return true;
+            }
+        }
+        System.out.println(excitedName + " is not found");
+        return false;
+    }
+
+    public boolean deleteFeature(String name) {
+        for (int i = 0; i < productNames.length; i++) {
+            if (productNames[i] != null && productNames[i].equals(name)) {
+
+                // shifting
+                for (int j = i; j < productNames.length - 1; j++) {
+                    productNames[j] = productNames[j + 1];
+                }
+                productNames[productNames.length - 1] = null;
+
+                return true;
+            }
+        }
+        System.out.println(name + " is not found");
+        return false;
+    }
+}
+
+8}give a real- world example of a has-a-relationship
+Consider a hospital class but Hospital has many branches like Doctor, Staff, Nurses.
+In Doctor is a separate class in that Doctor have many special type of Doctors based on their specialization.
+Similarly Staff and Nurses are also separate class which comes under Hospital.
+Here HospitalExecutor is the main class here we can call all separate class.
+
+
+7} Can a constructor have a return type? Why?
+Constructor is not having a return type because it creats internally specifies object refernce.
+
+4} Write a program to demonstrate a default constructor.
+class Fan
+{
+String fanNames[]=new String[2];
+int index;
+Fan f=new Fan();
+public Fan()
+{
+System.out.println("Default Constructor");
+}
+}
+
+class FanExecutor
+{
+public static void main(String args[])
+{
+f.Fan();
+}
+}
+
+5} Write a program using a parameterized constructor.
+class Rapido
+{
+int vehicleId;
+String ownerName;
+String driverName;
+public Rapido(int vehicleId, String ownerName)
+{
+System.out.println("Vehicle Id is: "+vehicleId);
+System.out.println("Owner Name of the Vehicle is: "+ownerName);
+}
+}
+
+6} What is Constructor in Java? Who provides the default constructor.
+Constructor in Java is a special type of constructor in which it have a method that is same as class name and which can be deferinted by type and number of parameters.
